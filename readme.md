@@ -17,3 +17,6 @@ For running evals use: [eval-pipeline app](https://github.com/sutt/py-llama-scri
 
  - [etc](./etc)
     - word lists for wordle
+
+ - [collect-results.sh](./collect-results.sh)
+    - a script for moving output files (output*.json, output*.md, grade*.json) from the eval-pipeline app
