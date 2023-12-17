@@ -1,0 +1,143 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Rule-QA-1",
+    "sub_sections": [
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n<EVAL-ENDCHAR>\n\n"
+      },
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- answer_type: mutliple-choice\n- answer suggested length: 10\n\n",
+        "data": {
+          "answer_type": "mutliple-choice",
+          "answer_suggested_length": "10"
+        }
+      }
+    ],
+    "run_id": "09fa",
+    "model_name": "gpt-4",
+    "meta_data": {
+      "answer_type": "mutliple-choice",
+      "answer_suggested_length": "10"
+    },
+    "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n<EVAL-ENDCHAR>\n\n"
+  },
+  "questions": [
+    {
+      "name": "Num-Guesses-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) 6",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: What is the maximum number of guesses you can make in a game of Wordle?\nA) 5\nB) 6\nC) 7\nD) No limit\n<EVAL-ENDCHAR1>\n\n",
+      "completion": "B) 6",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.44899320602417,
+      "grade": true
+    },
+    {
+      "name": "Num-Letter-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) 5",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: How many letter are in the word you are trying to guess?\nA) 4\nB) 5\nC) 6\nD) Any amount\n",
+      "completion": "B) 5",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.7463927268981934,
+      "grade": true
+    },
+    {
+      "name": "Terminology-Present-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "A) Present",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is in the word you are trying to guess, but not in the correct position, what is it called?\nA) Present\nB) Absent\nC) Correct\nD) None of the above\n\n",
+      "completion": "A) Present",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.0326530933380127,
+      "grade": true
+    },
+    {
+      "name": "Terminology-Absent-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) Absent",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is not in the word you are trying to guess, what is it called?\nA) Present\nB) Absent\nC) Correct\nD) None of the above\n\n",
+      "completion": "B) Absent",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.0398383140563965,
+      "grade": true
+    },
+    {
+      "name": "Mechanics-Multiletter-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is indicated as present but not in the correct position, that means there can only be one of that letter in the word? \nA) True\nB) False\n",
+      "completion": "B) False",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 0.9447312355041504,
+      "grade": true
+    },
+    {
+      "name": "Mechanics-Basic-Reasoning-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is indicated as correct, that means that any letter could go in that spot?\nA) True\nB) False\n",
+      "completion": "B) False",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 0.9402737617492676,
+      "grade": true
+    },
+    {
+      "name": "Mechanics-Basic-Reasoning-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is indicated as correct, that means that any letter could go in that spot?\nA) True\nB) False\n",
+      "completion": "B) False",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 0.5643501281738281,
+      "grade": true
+    },
+    {
+      "name": "Mechanics-Guess-Valid-Word",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "D) No - you cannot guess a word that is not in the dictionary",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nCan you guess any combination of letters as your guess?\nA) Yes - as long as its only five letters\nB) Yes - as long as the letters are in the alphabet\nC) No - you cannot repeat letters\nD) No - you cannot guess a word that is not in the dictionary\n",
+      "completion": "D) No - you cannot guess a word that is not in the dictionary",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.6473677158355713,
+      "grade": true
+    }
+  ]
+}
