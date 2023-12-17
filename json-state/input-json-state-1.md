@@ -70,13 +70,12 @@ A) Yes - the player has found the secret word
 B) Yes - the player has guessed five total letters correctly
 C) No - the player has not guessed all five letters in the correct order
 D) No - the order of the letters needs to be reversed
-E) We don't know - there are still letters that can be guessed
 <EVAL-ENDCHAR>
 
 ## Reason-Current-Turn-Num
 #### meta
 #### answer
-B) No<EVAL-ENDCHAR>
+D) 4<EVAL-ENDCHAR>
 #### question
 What is the current turn number? 
 A) 1
@@ -107,18 +106,6 @@ What choice contains only valid words that have been tried?
 A) STATE, FLAME
 B) ABOUT, SALES
 C) ABSENT, PRESENT, CORRECT
-D) None of the above
-<EVAL-ENDCHAR>
-
-## Reason-Letters-Guessed
-#### meta
-#### answer
-A) ABOUT, SALES, FLAME<EVAL-ENDCHAR>
-#### question
-What letters have been tried?
-A) ABOUT, SALES, FLAME
-B) ABOUT, SALES
-C) ABOUT
 D) None of the above
 <EVAL-ENDCHAR>
 
