@@ -1,0 +1,143 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Rule-QA-1",
+    "sub_sections": [
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n<EVAL-ENDCHAR>\n\n"
+      },
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- answer_type: mutliple-choice\n- answer suggested length: 10\n\n",
+        "data": {
+          "answer_type": "mutliple-choice",
+          "answer_suggested_length": "10"
+        }
+      }
+    ],
+    "run_id": "5f82",
+    "model_name": "llama_13b_chat",
+    "meta_data": {
+      "answer_type": "mutliple-choice",
+      "answer_suggested_length": "10"
+    },
+    "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n<EVAL-ENDCHAR>\n\n"
+  },
+  "questions": [
+    {
+      "name": "Num-Guesses-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) 6",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: What is the maximum number of guesses you can make in a game of Wordle?\nA) 5\nB) 6\nC) 7\nD) No limit\n<EVAL-ENDCHAR1>\n\n",
+      "completion": "  C) No limit",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 114.64327263832092,
+      "grade": false
+    },
+    {
+      "name": "Num-Letter-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) 5",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: How many letter are in the word you are trying to guess?\nA) 4\nB) 5\nC) 6\nD) Any amount\n",
+      "completion": "  C) 6",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 51.80526614189148,
+      "grade": false
+    },
+    {
+      "name": "Terminology-Present-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "A) Present",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is in the word you are trying to guess, but not in the correct position, what is it called?\nA) Present\nB) Absent\nC) Correct\nD) None of the above\n\n",
+      "completion": "  Sure! Here's my answer:\n\nC) Correct",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 57.68838334083557,
+      "grade": false
+    },
+    {
+      "name": "Terminology-Absent-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) Absent",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is not in the word you are trying to guess, what is it called?\nA) Present\nB) Absent\nC) Correct\nD) None of the above\n\n",
+      "completion": "  Sure! Here's my answer:\n\nB) Absent",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 57.17443084716797,
+      "grade": false
+    },
+    {
+      "name": "Mechanics-Multiletter-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is indicated as present but not in the correct position, that means there can only be one of that letter in the word? \nA) True\nB) False\n",
+      "completion": "  B) False",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 52.82262873649597,
+      "grade": true
+    },
+    {
+      "name": "Mechanics-Basic-Reasoning-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is indicated as correct, that means that any letter could go in that spot?\nA) True\nB) False\n",
+      "completion": "  B) False",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 50.30705165863037,
+      "grade": true
+    },
+    {
+      "name": "Mechanics-Basic-Reasoning-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is indicated as correct, that means that any letter could go in that spot?\nA) True\nB) False\n",
+      "completion": "  B) False",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 49.78066635131836,
+      "grade": true
+    },
+    {
+      "name": "Mechanics-Guess-Valid-Word",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "D) No - you cannot guess a word that is not in the dictionary",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nCan you guess any combination of letters as your guess?\nA) Yes - as long as its only five letters\nB) Yes - as long as the letters are in the alphabet\nC) No - you cannot repeat letters\nD) No - you cannot guess a word that is not in the dictionary\n",
+      "completion": "  C) No - you cannot repeat letters",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 61.37872338294983,
+      "grade": false
+    }
+  ]
+}
