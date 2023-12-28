@@ -61,13 +61,13 @@
         "answer_type": "mutliple-choice",
         "answer_suggested_length": "10"
       },
-      "ground_truth": "B) No",
+      "ground_truth": "C) No - the player has not guessed all five letters in the correct order",
       "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, has the player lost yet?\nA) Yes\nB) No\n\n",
       "completion": "  B) No",
       "error": null,
       "model_name": "llama_13b_chat",
       "eval_time": 142.9084436893463,
-      "grade": true
+      "grade": false
     },
     {
       "name": "Reason-Win-3",
@@ -81,7 +81,7 @@
       "error": null,
       "model_name": "llama_13b_chat",
       "eval_time": 148.02684807777405,
-      "grade": false
+      "grade": true
     },
     {
       "name": "Reason-Current-Turn-Num",

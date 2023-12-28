@@ -92,4 +92,4 @@ D) R: 3 U: 3 G: 1 B: 3 Y: 5
 <EVAL-ENDCHAR>
 
 #### answer
-A<EVAL-ENDCHAR>
+A) R: 3 U: 3 G: 1 B: 1 Y: 1<EVAL-ENDCHAR>
