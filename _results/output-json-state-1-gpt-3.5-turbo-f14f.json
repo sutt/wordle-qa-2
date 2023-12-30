@@ -1,0 +1,157 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "JSON-state-reasoning-1",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- answer_type: mutliple-choice\n- answer suggested length: 10\n\n",
+        "data": {
+          "answer_type": "mutliple-choice",
+          "answer_suggested_length": "10"
+        }
+      },
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n<EVAL-ENDCHAR>\n\n"
+      }
+    ],
+    "run_id": "f14f",
+    "model_name": "gpt-3.5-turbo",
+    "meta_data": {
+      "answer_type": "mutliple-choice",
+      "answer_suggested_length": "10"
+    },
+    "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n<EVAL-ENDCHAR>\n\n"
+  },
+  "questions": [
+    {
+      "name": "Reason-Win",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) No",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, has the player won yet?\nA) Yes\nB) No\n",
+      "completion": "B) No",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.044909954071045,
+      "grade": true
+    },
+    {
+      "name": "Reason-Win-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) No",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, do we know the secret word?\nA) Yes\nB) No\n",
+      "completion": "B) No",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 0.5096702575683594,
+      "grade": true
+    },
+    {
+      "name": "Reason-Win-3",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) No",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, has the player lost yet?\nA) Yes\nB) No\n\n",
+      "completion": "B) No",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 0.940650463104248,
+      "grade": true
+    },
+    {
+      "name": "Reason-Win-3",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "C) No - the player has not guessed all five letters in the correct order",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, has the player lost yet?\nA) Yes - the player has found the secret word\nB) Yes - the player has guessed five total letters correctly\nC) No - the player has not guessed all five letters in the correct order\nD) No - the order of the letters needs to be reversed\n",
+      "completion": "C) No - the player has not guessed all five letters in the correct order",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.2324612140655518,
+      "grade": true
+    },
+    {
+      "name": "Reason-Current-Turn-Num",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "D) 4",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat is the current turn number? \nA) 1\nB) 2\nC) 3\nD) 4\nE) None of the above\n",
+      "completion": "The current turn number can be determined by counting the number of non-empty elements in the state information. \n\nIn the given state information, there are 2 non-empty elements, which means that the current turn number is 2.\n\nTherefore, the answer is B) 2.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 0.950692892074585,
+      "grade": false
+    },
+    {
+      "name": "Reason-Words-Guessed",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "A) ABOUT, SALES, FLAME",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat words have been tried?\nA) ABOUT, SALES, FLAME\nB) ABOUT, SALES\nC) ABOUT\nD) None of the above\n",
+      "completion": "B) ABOUT, SALES",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 0.9561154842376709,
+      "grade": false
+    },
+    {
+      "name": "Reason-Words-Guessed-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) ABOUT, SALES",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat choice contains only valid words that have been tried?\nA) STATE, FLAME\nB) ABOUT, SALES\nC) ABSENT, PRESENT, CORRECT\nD) None of the above\n",
+      "completion": "C) ABSENT, PRESENT, CORRECT",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.030177116394043,
+      "grade": false
+    },
+    {
+      "name": "Reason-Letters-Guessed",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "D) None of the above",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat letters do we know are in the secret word?\nA) B, O, U\nB) T, R, S\nC) A, U, L\nD) None of the above\n",
+      "completion": "The correct answer is A) B, O, U.\nFrom the state information, we can see that in the first row, the letter 'b' is present, the letter 'o' is correct, and the letters 'a', 'u', and 't' are absent.\nTherefore, we know that the secret word contains the letters B, O, and U.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.7651276588439941,
+      "grade": false
+    },
+    {
+      "name": "Reason-Letters-Guessed-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "A) B, O, S",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat letters do we know are in the secret word?\nA) B, O, S\nB) T, R, S\nC) A, U, L\nD) None of the above\n",
+      "completion": "The correct answer is A) B, O, S. \nFrom the given state information, we can see that the letters 'b', 'o', and 's' are labeled as 'present' in the first row, second row, and first column respectively.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.5554959774017334,
+      "grade": true
+    }
+  ]
+}

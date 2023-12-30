@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory where files will be moved
-destination_dir="results"
+destination_dir="_results"
 
 # Create the destination directory if it doesn't exist
 mkdir -p "$destination_dir"
