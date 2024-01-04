@@ -1,0 +1,171 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Simulated-Missing-1",
+    "sub_sections": [
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n<EVAL-ENDCHAR>\n\n"
+      },
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- answer_type: mutliple-choice\n- answer suggested length: 30\n\n",
+        "data": {
+          "answer_type": "mutliple-choice",
+          "answer_suggested_length": "30"
+        }
+      }
+    ],
+    "run_id": "8fab",
+    "model_name": "gpt-4",
+    "meta_data": {
+      "answer_type": "mutliple-choice",
+      "answer_suggested_length": "30"
+    },
+    "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n<EVAL-ENDCHAR>\n\n"
+  },
+  "questions": [
+    {
+      "name": "Simulated-Missing-0",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "A) ['absent', 'absent', 'absent', 'absent', 'present']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"ascot\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"egret\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"greed\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"cower\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"cabby\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"shirt\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['absent', 'absent', 'absent', 'absent', 'present']\nB) ['correct', 'absent', 'absent', 'absent', 'present']\nC) ['absent', 'absent', 'present', 'absent', 'absent']\nD) ['absent', 'absent', 'absent', 'correct', 'present']\n",
+      "completion": "A) ['absent', 'absent', 'absent', 'absent', 'present']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.274357795715332,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "D) ['absent', 'absent', 'absent', 'present', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"glory\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"squib\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": [\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"retry\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"present\",\n      \"present\",\n      \"absent\",\n      \"present\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"dodge\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"gamma\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"present\"\n    ]\n  },\n  {\n    \"word\": \"arise\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['absent', 'absent', 'absent', 'correct', 'absent']\nB) ['absent', 'absent', 'absent', 'correct', 'present']\nC) ['absent', 'absent', 'absent', 'correct', 'absent']\nD) ['absent', 'absent', 'absent', 'present', 'absent']\n",
+      "completion": "D) ['absent', 'absent', 'absent', 'present', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.1981897354125977,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "D) ['present', 'absent', 'absent', 'present', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"stoke\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"blitz\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"nanny\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"stout\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"present\",\n      \"present\"\n    ]\n  },\n  {\n    \"word\": \"opera\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"thumb\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['present', 'absent', 'absent', 'correct', 'absent']\nB) ['present', 'present', 'absent', 'present', 'absent']\nC) ['present', 'correct', 'absent', 'present', 'present']\nD) ['present', 'absent', 'absent', 'present', 'absent']\n",
+      "completion": "A) ['present', 'absent', 'absent', 'correct', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.5198800563812256,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-3",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "A) ['present', 'absent', 'present', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"saucy\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"edict\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"fault\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"fritz\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"present\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"micro\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"correct\",\n      \"absent\",\n      \"present\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"riper\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['present', 'absent', 'present', 'absent', 'absent']\nB) ['present', 'absent', 'absent', 'absent', 'absent']\nC) ['absent', 'absent', 'present', 'absent', 'absent']\nD) ['present', 'absent', 'present', 'absent', 'correct']\n",
+      "completion": "A) ['present', 'absent', 'present', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.346646785736084,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-4",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "D) ['absent', 'absent', 'absent', 'present', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"creek\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"present\",\n      \"present\",\n      \"present\",\n      \"present\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"roomy\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": [\n      \"correct\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"squad\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"correct\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"tough\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"intro\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"recap\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['correct', 'absent', 'absent', 'present', 'absent']\nB) ['absent', 'present', 'correct', 'present', 'absent']\nC) ['absent', 'absent', 'absent', 'correct', 'absent']\nD) ['absent', 'absent', 'absent', 'present', 'absent']\n",
+      "completion": "A) ['correct', 'absent', 'absent', 'present', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.5979197025299072,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-5",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "C) ['correct', 'correct', 'correct', 'correct', 'correct']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"ensue\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"beset\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"dolly\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"correct\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"first\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"cargo\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"shyly\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": \"???\"\n  }\n]\n\nPossible Answers:\nA) ['correct', 'correct', 'absent', 'correct', 'correct']\nB) ['correct', 'absent', 'correct', 'correct', 'correct']\nC) ['correct', 'correct', 'correct', 'correct', 'correct']\nD) ['present', 'correct', 'correct', 'present', 'correct']\n",
+      "completion": "C) ['correct', 'correct', 'correct', 'correct', 'correct']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.8285346031188965,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-6",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['absent', 'absent', 'absent', 'correct', 'correct']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"gorge\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"correct\",\n      \"present\",\n      \"present\",\n      \"present\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"stave\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"murky\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"grant\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"avian\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"grove\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['absent', 'present', 'absent', 'correct', 'correct']\nB) ['absent', 'absent', 'absent', 'correct', 'correct']\nC) ['correct', 'absent', 'correct', 'correct', 'present']\nD) ['absent', 'absent', 'absent', 'correct', 'present']\n",
+      "completion": "A) ['absent', 'present', 'absent', 'correct', 'correct']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.3144497871398926,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-7",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['correct', 'absent', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"usual\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"missy\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"correct\",\n      \"present\",\n      \"present\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"cache\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"focal\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"sound\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"siege\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['correct', 'correct', 'absent', 'absent', 'absent']\nB) ['correct', 'absent', 'absent', 'absent', 'absent']\nC) ['correct', 'present', 'absent', 'correct', 'absent']\nD) ['correct', 'absent', 'absent', 'correct', 'absent']\n",
+      "completion": "A) ['correct', 'correct', 'absent', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.4365415573120117,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-8",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "D) ['correct', 'correct', 'correct', 'correct', 'correct']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"spank\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"correct\",\n      \"absent\",\n      \"correct\",\n      \"present\",\n      \"present\"\n    ]\n  },\n  {\n    \"word\": \"shaky\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": [\n      \"correct\",\n      \"absent\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"mango\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"present\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"pause\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"present\",\n      \"absent\",\n      \"present\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"where\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\"\n    ]\n  },\n  {\n    \"word\": \"snaky\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": \"???\"\n  }\n]\n\nPossible Answers:\nA) ['correct', 'correct', 'correct', 'absent', 'correct']\nB) ['correct', 'absent', 'correct', 'absent', 'correct']\nC) ['present', 'absent', 'correct', 'correct', 'correct']\nD) ['correct', 'correct', 'correct', 'correct', 'correct']\n",
+      "completion": "D) ['correct', 'correct', 'correct', 'correct', 'correct']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.846024990081787,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-9",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['present', 'absent', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n[\n  {\n    \"word\": \"arose\",\n    \"current_row\": 0,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"present\"\n    ]\n  },\n  {\n    \"word\": \"timid\",\n    \"current_row\": 1,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"correct\"\n    ]\n  },\n  {\n    \"word\": \"extol\",\n    \"current_row\": 2,\n    \"win\": false,\n    \"results\": \"???\"\n  },\n  {\n    \"word\": \"nurse\",\n    \"current_row\": 3,\n    \"win\": false,\n    \"results\": [\n      \"present\",\n      \"absent\",\n      \"absent\",\n      \"present\",\n      \"present\"\n    ]\n  },\n  {\n    \"word\": \"chaos\",\n    \"current_row\": 4,\n    \"win\": false,\n    \"results\": [\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"absent\",\n      \"present\"\n    ]\n  },\n  {\n    \"word\": \"spend\",\n    \"current_row\": 5,\n    \"win\": true,\n    \"results\": [\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\",\n      \"correct\"\n    ]\n  }\n]\n\nPossible Answers:\nA) ['present', 'correct', 'absent', 'absent', 'absent']\nB) ['present', 'absent', 'absent', 'absent', 'absent']\nC) ['present', 'present', 'absent', 'absent', 'absent']\nD) ['present', 'correct', 'absent', 'absent', 'correct']\n",
+      "completion": "A) ['present', 'correct', 'absent', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.7890198230743408,
+      "grade": false
+    }
+  ]
+}

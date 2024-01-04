@@ -131,8 +131,8 @@ def make_markdown(
 if __name__ == '__main__':
     
     # Params
-    NUM_QUESTIONS = 10
-    SEED = None
+    NUM_QUESTIONS = 15
+    SEED = 200
     if SEED is not None:
         random.seed(SEED)
 
