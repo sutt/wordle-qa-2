@@ -24,7 +24,7 @@ A) 5
 B) 6
 C) 7
 D) No limit
-<EVAL-ENDCHAR1>
+<EVAL-ENDCHAR>
 
 ## Num-Letter-1
 #### meta

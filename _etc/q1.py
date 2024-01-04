@@ -119,16 +119,24 @@ def make_markdown(
 ## Simulated-Missing-{index}
 #### meta
 #### answer
-{a_text}
+{a_text}<EVAL-ENDCHAR>
 #### question
 {q_text}
 <EVAL-ENDCHAR>
 '''
     return md
 
+
+
 if __name__ == '__main__':
     
+    # Params
     NUM_QUESTIONS = 10
+    SEED = None
+    if SEED is not None:
+        random.seed(SEED)
+
+    # Generate Output, print to stdout, and pipe to file
     md = ''
     for q_index in range(NUM_QUESTIONS):
         d = make_question()
@@ -142,12 +150,12 @@ if __name__ == '__main__':
     
     print(md)
 
-    def test_permute():     
-        for i in range(10): 
-            N = 5
-            options = ['absent', 'present', 'correct']
-            a = [random.choice(options) for _ in range(N)]
-            a_2 = permute_answer(a)
-            print(a)
-            print(a_2)
-            print('-----')
+    # def test_permute():     
+    #     for i in range(10): 
+    #         N = 5
+    #         options = ['absent', 'present', 'correct']
+    #         a = [random.choice(options) for _ in range(N)]
+    #         a_2 = permute_answer(a)
+    #         print(a)
+    #         print(a_2)
+    #         print('-----')
