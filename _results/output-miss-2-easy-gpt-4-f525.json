@@ -1,0 +1,241 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Simulated-Missing-2-Easy",
+    "sub_sections": [
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n<EVAL-ENDCHAR>\n\n"
+      },
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- answer_type: mutliple-choice\n- answer suggested length: 30\n\n\n",
+        "data": {
+          "answer_type": "mutliple-choice",
+          "answer_suggested_length": "30"
+        }
+      }
+    ],
+    "run_id": "f525",
+    "model_name": "gpt-4",
+    "meta_data": {
+      "answer_type": "mutliple-choice",
+      "answer_suggested_length": "30"
+    },
+    "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n<EVAL-ENDCHAR>\n\n"
+  },
+  "questions": [
+    {
+      "name": "Simulated-Missing-0",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "A) ['absent', 'absent', 'present', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"happy\",\n  \"turns\": [\n    {\n      \"word\": \"jumpy\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"correct\",\n        \"correct\"\n      ]\n    },\n    {\n      \"word\": \"eying\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"crawl\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'absent', 'present', 'absent', 'absent']\nB) ['absent', 'absent', 'correct', 'absent', 'present']\nC) ['absent', 'absent', 'present', 'present', 'absent']\nD) ['absent', 'present', 'present', 'absent', 'absent']\n",
+      "completion": "A) ['absent', 'absent', 'present', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.640491485595703,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-1",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['absent', 'absent', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"fluff\",\n  \"turns\": [\n    {\n      \"word\": \"sever\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"rigid\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"steep\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'present', 'absent', 'absent', 'absent']\nB) ['absent', 'absent', 'absent', 'absent', 'absent']\nC) ['correct', 'absent', 'absent', 'absent', 'absent']\nD) ['absent', 'absent', 'absent', 'absent', 'correct']\n",
+      "completion": "B) ['absent', 'absent', 'absent', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.0728399753570557,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['correct', 'absent', 'absent', 'absent', 'present']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"vocal\",\n  \"turns\": [\n    {\n      \"word\": \"plead\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"correct\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"betel\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"correct\"\n      ]\n    },\n    {\n      \"word\": \"verso\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['correct', 'correct', 'absent', 'absent', 'present']\nB) ['correct', 'absent', 'absent', 'absent', 'present']\nC) ['correct', 'absent', 'correct', 'absent', 'present']\nD) ['correct', 'absent', 'correct', 'absent', 'present']\n",
+      "completion": "A) ['correct', 'correct', 'absent', 'absent', 'present']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.6891734600067139,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-3",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "D) ['absent', 'absent', 'absent', 'absent', 'present']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"pouty\",\n  \"turns\": [\n    {\n      \"word\": \"truck\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"present\",\n        \"absent\",\n        \"correct\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"stray\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\",\n        \"correct\"\n      ]\n    },\n    {\n      \"word\": \"skirt\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['correct', 'absent', 'absent', 'absent', 'present']\nB) ['absent', 'absent', 'absent', 'correct', 'present']\nC) ['absent', 'absent', 'present', 'absent', 'present']\nD) ['absent', 'absent', 'absent', 'absent', 'present']\n",
+      "completion": "B) ['absent', 'absent', 'absent', 'correct', 'present']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.7067952156066895,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-4",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "A) ['absent', 'correct', 'absent', 'present', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"pinto\",\n  \"turns\": [\n    {\n      \"word\": \"prize\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"correct\",\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"pouty\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"correct\",\n        \"present\",\n        \"absent\",\n        \"correct\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"visor\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'correct', 'absent', 'present', 'absent']\nB) ['correct', 'correct', 'absent', 'present', 'absent']\nC) ['absent', 'correct', 'absent', 'absent', 'absent']\nD) ['absent', 'correct', 'absent', 'correct', 'absent']\n",
+      "completion": "C) ['absent', 'correct', 'absent', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.525502920150757,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-5",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['present', 'absent', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"album\",\n  \"turns\": [\n    {\n      \"word\": \"smart\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"present\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"light\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"present\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"under\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['present', 'absent', 'present', 'absent', 'present']\nB) ['present', 'absent', 'absent', 'absent', 'absent']\nC) ['present', 'absent', 'absent', 'absent', 'present']\nD) ['absent', 'absent', 'correct', 'absent', 'absent']\n",
+      "completion": "A) ['present', 'absent', 'present', 'absent', 'present']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.114365339279175,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-6",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['absent', 'present', 'absent', 'absent', 'present']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"leery\",\n  \"turns\": [\n    {\n      \"word\": \"knave\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"present\"\n      ]\n    },\n    {\n      \"word\": \"belle\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"correct\",\n        \"present\",\n        \"present\",\n        \"present\"\n      ]\n    },\n    {\n      \"word\": \"bribe\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'correct', 'absent', 'absent', 'present']\nB) ['absent', 'present', 'absent', 'absent', 'present']\nC) ['absent', 'present', 'correct', 'absent', 'absent']\nD) ['absent', 'correct', 'absent', 'absent', 'present']\n",
+      "completion": "A) ['absent', 'correct', 'absent', 'absent', 'present']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 1.447406530380249,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-7",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "D) ['absent', 'present', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"grave\",\n  \"turns\": [\n    {\n      \"word\": \"sport\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"present\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"plain\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"correct\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"salty\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'correct', 'correct', 'absent', 'absent']\nB) ['absent', 'present', 'absent', 'absent', 'correct']\nC) ['absent', 'present', 'present', 'absent', 'absent']\nD) ['absent', 'present', 'absent', 'absent', 'absent']\n",
+      "completion": "C) ['absent', 'present', 'present', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.2499327659606934,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-8",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "A) ['absent', 'present', 'absent', 'present', 'correct']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"acute\",\n  \"turns\": [\n    {\n      \"word\": \"kinky\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"laugh\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"correct\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"dunce\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'present', 'absent', 'present', 'correct']\nB) ['absent', 'absent', 'absent', 'present', 'correct']\nC) ['correct', 'present', 'absent', 'present', 'present']\nD) ['absent', 'present', 'absent', 'present', 'absent']\n",
+      "completion": "A) ['absent', 'present', 'absent', 'present', 'correct']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.3822779655456543,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-9",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "A) ['absent', 'absent', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"thump\",\n  \"turns\": [\n    {\n      \"word\": \"stunk\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"correct\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"relic\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"green\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'absent', 'absent', 'absent', 'absent']\nB) ['absent', 'absent', 'correct', 'absent', 'absent']\nC) ['correct', 'absent', 'absent', 'absent', 'absent']\nD) ['absent', 'absent', 'absent', 'absent', 'present']\n",
+      "completion": "A) ['absent', 'absent', 'absent', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.4286296367645264,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-10",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "D) ['absent', 'correct', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"urban\",\n  \"turns\": [\n    {\n      \"word\": \"heath\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"acute\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"present\",\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"pried\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'correct', 'correct', 'present', 'absent']\nB) ['present', 'present', 'absent', 'absent', 'absent']\nC) ['absent', 'correct', 'absent', 'absent', 'present']\nD) ['absent', 'correct', 'absent', 'absent', 'absent']\n",
+      "completion": "D) ['absent', 'correct', 'absent', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.2687737941741943,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-11",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['absent', 'absent', 'absent', 'present', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"ennui\",\n  \"turns\": [\n    {\n      \"word\": \"taste\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"present\"\n      ]\n    },\n    {\n      \"word\": \"icily\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"present\",\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"thong\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'absent', 'absent', 'present', 'present']\nB) ['absent', 'absent', 'absent', 'present', 'absent']\nC) ['absent', 'absent', 'absent', 'absent', 'absent']\nD) ['absent', 'present', 'absent', 'present', 'absent']\n",
+      "completion": "B) ['absent', 'absent', 'absent', 'present', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.375563859939575,
+      "grade": true
+    },
+    {
+      "name": "Simulated-Missing-12",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['absent', 'present', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"pearl\",\n  \"turns\": [\n    {\n      \"word\": \"funny\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"delta\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"correct\",\n        \"present\",\n        \"absent\",\n        \"present\"\n      ]\n    },\n    {\n      \"word\": \"blitz\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['correct', 'present', 'absent', 'absent', 'present']\nB) ['absent', 'present', 'absent', 'absent', 'absent']\nC) ['absent', 'absent', 'absent', 'absent', 'absent']\nD) ['correct', 'present', 'absent', 'absent', 'absent']\n",
+      "completion": "D) ['correct', 'present', 'absent', 'absent', 'absent']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.3368420600891113,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-13",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "C) ['absent', 'absent', 'absent', 'absent', 'absent']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"bravo\",\n  \"turns\": [\n    {\n      \"word\": \"wager\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\",\n        \"present\"\n      ]\n    },\n    {\n      \"word\": \"jazzy\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"absent\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"spike\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'absent', 'correct', 'absent', 'correct']\nB) ['absent', 'absent', 'correct', 'absent', 'absent']\nC) ['absent', 'absent', 'absent', 'absent', 'absent']\nD) ['correct', 'absent', 'correct', 'absent', 'absent']\n",
+      "completion": "A) ['absent', 'absent', 'correct', 'absent', 'correct']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 2.4114439487457275,
+      "grade": false
+    },
+    {
+      "name": "Simulated-Missing-14",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "30"
+      },
+      "ground_truth": "B) ['absent', 'absent', 'absent', 'absent', 'present']",
+      "question": "Below is data from a Wordle game.\n\nIn the data, one portion is marked missing, indicated by the ??? tokens. \n\nRespond to the multiple choice question by selecting the answer which best completes the missing portion of the data.\n\nRespond only with the letter and the text in the brackets, e.g. `A) ['absent', 'absent', 'absent', 'absent', 'absent']`. Do not include any other text in your response.\n\n```json\n{\n  \"secret_word\": \"equal\",\n  \"turns\": [\n    {\n      \"word\": \"alpha\",\n      \"current_row\": 0,\n      \"win\": false,\n      \"results\": [\n        \"present\",\n        \"present\",\n        \"absent\",\n        \"absent\",\n        \"present\"\n      ]\n    },\n    {\n      \"word\": \"salon\",\n      \"current_row\": 1,\n      \"win\": false,\n      \"results\": [\n        \"absent\",\n        \"present\",\n        \"present\",\n        \"absent\",\n        \"absent\"\n      ]\n    },\n    {\n      \"word\": \"since\",\n      \"current_row\": 2,\n      \"win\": false,\n      \"results\": \"???\"\n    }\n  ]\n}\n```\n\nPossible Answers:\nA) ['absent', 'absent', 'present', 'present', 'present']\nB) ['absent', 'absent', 'absent', 'absent', 'present']\nC) ['correct', 'absent', 'absent', 'absent', 'present']\nD) ['present', 'absent', 'absent', 'absent', 'correct']\n",
+      "completion": "A) ['absent', 'absent', 'present', 'present', 'present']",
+      "error": null,
+      "model_name": "gpt-4",
+      "eval_time": 3.01054310798645,
+      "grade": false
+    }
+  ]
+}
