@@ -1,0 +1,175 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "JSON-state-reasoning-1",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- answer_type: mutliple-choice\n- answer suggested length: 10\n\n",
+        "data": {
+          "answer_type": "mutliple-choice",
+          "answer_suggested_length": "10"
+        }
+      },
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n<EVAL-ENDCHAR>\n\n"
+      }
+    ],
+    "run_id": "91b3",
+    "model_name": "mistral_hf_7b",
+    "meta_data": {
+      "answer_type": "mutliple-choice",
+      "answer_suggested_length": "10"
+    },
+    "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n<EVAL-ENDCHAR>\n\n"
+  },
+  "questions": [
+    {
+      "name": "Reason-Win",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) No",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, has the player won yet?\nA) Yes\nB) No\n",
+      "question_usr": "Based on the output, has the player won yet?\nA) Yes\nB) No\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " Based on the information provided in both the wordle game state and the JSON output, it appears that the player has not won yet. The JSON output indicates that there are still empty letters in all of the rows and columns, and none of the letters",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 52.8117151260376,
+      "grade": false
+    },
+    {
+      "name": "Reason-Win-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) No",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, do we know the secret word?\nA) Yes\nB) No\n",
+      "question_usr": "Based on the output, do we know the secret word?\nA) Yes\nB) No\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " Based on the information provided, I cannot definitively determine if the secret word is known or not. The game state and its corresponding matrix indicate which letters are present or absent in their respective positions, but it does not reveal the order or arrangement of these",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 11.591168642044067,
+      "grade": false
+    },
+    {
+      "name": "Reason-Win-3",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) No",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, has the player lost yet?\nA) Yes\nB) No\n\n",
+      "question_usr": "Based on the output, has the player lost yet?\nA) Yes\nB) No\n\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " Based on the given information alone, it is impossible to determine if the player has lost. The matrix shows some letters in their correct positions (represented by \"present\" and \"correct,\" respectively), some letters that are present in the word but",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 11.604095697402954,
+      "grade": false
+    },
+    {
+      "name": "Reason-Win-3",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "C) No - the player has not guessed all five letters in the correct order",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nBased on the output, has the player lost yet?\nA) Yes - the player has found the secret word\nB) Yes - the player has guessed five total letters correctly\nC) No - the player has not guessed all five letters in the correct order\nD) No - the order of the letters needs to be reversed\n",
+      "question_usr": "Based on the output, has the player lost yet?\nA) Yes - the player has found the secret word\nB) Yes - the player has guessed five total letters correctly\nC) No - the player has not guessed all five letters in the correct order\nD) No - the order of the letters needs to be reversed\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " C) No - the player has not guessed all five letters in the correct order. Based on the given output, some letters have been identified as present or absent but their positions are unknown. Therefore, the player has not lost yet and still has a",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 18.085540056228638,
+      "grade": true
+    },
+    {
+      "name": "Reason-Current-Turn-Num",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "D) 4",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat is the current turn number? \nA) 1\nB) 2\nC) 3\nD) 4\nE) None of the above\n",
+      "question_usr": "What is the current turn number? \nA) 1\nB) 2\nC) 3\nD) 4\nE) None of the above\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " Based on the given state information, it's not possible to determine the current turn number directly from the provided data. The wordle game state only shows the current configuration of letters in each position and whether they are present or absent in the hidden word",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 13.575439929962158,
+      "grade": false
+    },
+    {
+      "name": "Reason-Words-Guessed",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "A) ABOUT, SALES, FLAME",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat words have been tried?\nA) ABOUT, SALES, FLAME\nB) ABOUT, SALES\nC) ABOUT\nD) None of the above\n",
+      "question_usr": "What words have been tried?\nA) ABOUT, SALES, FLAME\nB) ABOUT, SALES\nC) ABOUT\nD) None of the above\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " Based on the information provided, we can see that the words \"ABOUT\", \"SALES\", and \"FLAME\" have been tried in the game. Therefore, the answer is A) ABOUT, SALES, FLA",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 15.052091836929321,
+      "grade": false
+    },
+    {
+      "name": "Reason-Words-Guessed-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) ABOUT, SALES",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat choice contains only valid words that have been tried?\nA) STATE, FLAME\nB) ABOUT, SALES\nC) ABSENT, PRESENT, CORRECT\nD) None of the above\n",
+      "question_usr": "What choice contains only valid words that have been tried?\nA) STATE, FLAME\nB) ABOUT, SALES\nC) ABSENT, PRESENT, CORRECT\nD) None of the above\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " A) STATE\" and \"FLAME\" are the only valid words that have been tried based on the information provided. So the correct choice is A) STATE, FLAME.",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 14.047931671142578,
+      "grade": false
+    },
+    {
+      "name": "Reason-Letters-Guessed",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "D) None of the above",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat letters do we know are in the secret word?\nA) B, O, U\nB) T, R, S\nC) A, U, L\nD) None of the above\n",
+      "question_usr": "What letters do we know are in the secret word?\nA) B, O, U\nB) T, R, S\nC) A, U, L\nD) None of the above\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " A) B, O, U. The state information shows that these letters are present in the secret word according to the given clues and the grid.",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 11.515711784362793,
+      "grade": false
+    },
+    {
+      "name": "Reason-Letters-Guessed-2",
+      "meta_data": {
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "A) B, O, S",
+      "question": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\nWhat letters do we know are in the secret word?\nA) B, O, S\nB) T, R, S\nC) A, U, L\nD) None of the above\n",
+      "question_usr": "What letters do we know are in the secret word?\nA) B, O, S\nB) T, R, S\nC) A, U, L\nD) None of the above\n",
+      "question_sys": "Below is the state of a wordle game. Use the output of state information to answer the question.\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n```json\n[\n    [['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], \n    [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], \n    [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], \n    [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]\n]\n```\n",
+      "completion": " The correct answer is A) B, O, and S are in the secret word. Based on the state of the game and the JSON output, we can see that the letters B, O, and S have been correctly guessed in some positions,",
+      "error": null,
+      "model_name": "mistral_hf_7b",
+      "eval_time": 14.516013622283936,
+      "grade": false
+    }
+  ]
+}
